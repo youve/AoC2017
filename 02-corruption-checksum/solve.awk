@@ -1,18 +1,6 @@
 #!/usr/bin/awk -f
 
-function min(a, b) {
-    if (a < b) {
-        return a
-    }
-    return b
-}
-
-function max(a, b) {
-    if (a > b) {
-        return a
-    }
-    return b
-}
+@include "../lib/aoc_lib.awk"
 
 function solve_part_1() {
     maximum = $1
