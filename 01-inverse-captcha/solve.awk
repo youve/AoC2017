@@ -1,6 +1,6 @@
 #!/usr/bin/awk -f
 
-function solve(digits, last, i, j) {
+function solve(digits, last, i, j,     total) {
     total = 0
     while (i <= last) {
         if (digits[i] == digits[j]) {

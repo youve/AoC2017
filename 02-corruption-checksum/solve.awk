@@ -2,7 +2,7 @@
 
 @include "../lib/aoc_lib.awk"
 
-function solve_part_1() {
+function solve_part_1(       minimum, maximum, i) {
     maximum = $1
     minimum = $1
     for (i = 2; i <= NF; i++) {
@@ -12,7 +12,7 @@ function solve_part_1() {
     total_part_1 += (maximum - minimum)
 }
 
-function solve_part_2() {
+function solve_part_2(      i, j) {
     for (i = 1; i<= NF; i++) {
         for (j = i + 1; j<= NF; j++) {
             if ($i % $j == 0) {
